@@ -1,5 +1,3 @@
-plugins: [require('@tailwindcss/typography')],
-
 module.exports = {
     reactStrictMode: false,
     env: {

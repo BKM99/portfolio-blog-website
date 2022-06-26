@@ -10,7 +10,7 @@ export default function PostPage({
     slug,
     content,
 }) {
-    const clean = DOMPurify.sanitize(marked.parse(content))
+    const clean = DOMPurify.sanitize(content)
     return (
         <>
             <div className='pt-28 pr-72 pl-72 pb-28 shadow-xl'>
@@ -21,7 +21,7 @@ export default function PostPage({
                     <h1 className='text-2xl font-bold pt-8'>{title}</h1>
                     <div className='pb-4'>Posted on {date}</div>
                     <img src={cover_image} alt='' />
-                    <div className='pt-4'>
+                    <div className='prose pt-4'>
                         <div dangerouslySetInnerHTML={{ __html: marked(clean) }}></div>
                     </div>
                 </div>
