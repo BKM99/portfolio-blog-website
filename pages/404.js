@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 const Error404 = () => {
     return (
         <section className='flex items-center text-black'>
+            <Head>
+                <title>404 | Brandon Morimoto</title>
+            </Head>
+
             <div className='h-screen container flex flex-col items-center justify-center px-5 mx-auto my-8'>
                 <div className='max-w-md text-center'>
                     <h2 className='mb-8 font-extrabold text-9xl dark:text-gray-600'>

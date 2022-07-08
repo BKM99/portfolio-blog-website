@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import { useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import Head from 'next/head'
 
 const contactSchema = yup.object({
 	name: yup.string().required(),
@@ -45,6 +46,9 @@ const Contact = () => {
 	}
 	return (
 		<div className='flex items-center'>
+            <Head>
+                <title>Contact | Brandon Morimoto</title>
+            </Head>
 			<div className='h-screen max-w-screen-xl px-4 py-16 mx-auto pt-32 md:p-20'>
 				<div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
 					<div className='lg:col-span-2'>

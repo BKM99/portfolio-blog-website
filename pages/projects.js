@@ -1,10 +1,14 @@
 import {FiGithub} from 'react-icons/fi'
-import {HiOutlineExternalLink} from 'react-icons/hi'
+// import {HiOutlineExternalLink} from 'react-icons/hi'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const projects2 = () => {
     return (
         <div className='h-screen mx-20 md:pt-32 pt-32'>
+            <Head>
+                <title>Projects | Brandon Morimoto</title>
+            </Head>
             <h1 className='font-bold text-3xl text-center'></h1>
             <div className='max-w-5xl px-4 py-8 pb-32 mx-auto space-y-28'>
 
@@ -13,21 +17,18 @@ const projects2 = () => {
                     <div className='grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center'>
                         <div className='relative'>
                             <div className='aspect-w-1 aspect-h-1'>
-                                <Image src='/hwes-example.png' layout='fill' alt=''/>
+                                <Image src='/images/project-images/hwes-example.png' layout='fill' alt=''/>
                             </div>
                         </div>
                         <blockquote className='sm:col-span-2'>
                             <p>
                                 Built a web application that uses deep learning to solve handwritten math equations.
-                                The web application allows a user to write an equation on a canvas that gets sent to the
-                                server as a base64 encoded string. The string is processed and a result is sent back to the client.
                                 Implemented the VGG16 architecture using Tensorflow and deployed the model as an API using Django and React.js.
-                                Cleaned and processed the images using OpenCV and Pandas. Removed duplicate images using the MD5 hash.
                             </p>
                             <cite className='inline-flex items-center mt-8 not-italic'>
                                 <span className='hidden w-6 h-px bg-gray-400 sm:inline-block'></span>
                                 <p className='text-sm text-gray-500 uppercase sm:ml-3'>
-                                    Python, Tensorflow, OpenCV, Pandas, NumPy, Django, React.js
+                                    Python, Tensorflow, OpenCV, Django, React.js
                                 </p>
                             </cite>
                             <div className='flex pt-8 space-x-4'>
@@ -36,9 +37,9 @@ const projects2 = () => {
                                         <FiGithub size='30px'/>
                                     </a>
                                 </div>
-                                <div>
-                                    <HiOutlineExternalLink size='30px'/>
-                                </div>
+                                {/* <div> */}
+                                {/*     <HiOutlineExternalLink size='30px'/> */}
+                                {/* </div> */}
                             </div>
                         </blockquote>
                     </div>
@@ -49,7 +50,7 @@ const projects2 = () => {
                     <div className='grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center'>
                         <div className='relative'>
                             <div className='aspect-w-1 aspect-h-1'>
-                                <Image src='/stacked-roc.png' layout='fill' alt=''/>
+                                <Image src='/images/project-images/stacked-roc.png' layout='fill' alt=''/>
                             </div>
                         </div>
                         <blockquote className='sm:col-span-2'>
@@ -67,11 +68,13 @@ const projects2 = () => {
                             </cite>
                             <div className='flex pt-8 space-x-4'>
                                 <div>
-                                    <FiGithub size='30px'/>
+                                    <a href='https://github.com/BKM99/Malware-Classification-with-HMM-and-SVM' target='_blank' rel='noopner noreferrer'>
+                                        <FiGithub size='30px'/>
+                                    </a>
                                 </div>
-                                <div>
-                                    <HiOutlineExternalLink size='30px'/>
-                                </div>
+                                {/* <div> */}
+                                {/*     <HiOutlineExternalLink size='30px'/> */}
+                                {/* </div> */}
                             </div>
                         </blockquote>
                     </div>
@@ -82,7 +85,7 @@ const projects2 = () => {
                     <div className='grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center'>
                         <div className='relative'>
                             <div className='aspect-w-1 aspect-h-1'>
-                                <Image src='/maze-mania-ingame.png' layout='fill' alt=''/>
+                                <Image src='/images/project-images/maze-mania-ingame.png' layout='fill' alt=''/>
                             </div>
                         </div>
                         <blockquote className='sm:col-span-2'>
@@ -100,11 +103,13 @@ const projects2 = () => {
                             </cite>
                             <div className='flex pt-8 space-x-4'>
                                 <div>
-                                    <FiGithub size='30px'/>
+                                    <a href='https://github.com/BKM99/MazeMania' target='_blank' rel='noopner noreferrer'>
+                                        <FiGithub size='30px'/>
+                                    </a>
                                 </div>
-                                <div>
-                                    <HiOutlineExternalLink size='30px'/>
-                                </div>
+                                {/* <div> */}
+                                {/*     <HiOutlineExternalLink size='30px'/> */}
+                                {/* </div> */}
                             </div>
                         </blockquote>
                     </div>
@@ -115,28 +120,29 @@ const projects2 = () => {
                     <div className='grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center'>
                         <div className='relative'>
                             <div className='aspect-w-1 aspect-h-1'>
-                                <Image src='/home-page-portfolio.png' layout='fill' alt=''/>
+                                <Image src='/images/project-images/home-page-portfolio.png' layout='fill' alt=''/>
                             </div>
                         </div>
                         <blockquote className='sm:col-span-2'>
                             <p>
                                 Designed and built my own personal portfolio and blog. Nothing much to say about it here
-                                since you are already on the website. The blog consists of things I find interesting like math,
-                                machine learning, Neo(vim), summarized posts of things I have learned along the way, and much more.
+                                since you are already on the website.
                             </p>
                             <cite className='inline-flex items-center mt-8 not-italic'>
                                 <span className='hidden w-6 h-px bg-gray-400 sm:inline-block'></span>
                                 <p className='text-sm text-gray-500 uppercase sm:ml-3'>
-                                    Nextjs, Tailwind CSS, EmailJS, Yup, framer-motion, React-Hook-Form
+                                    Nextjs, Tailwind CSS, framer-motion
                                 </p>
                             </cite>
                             <div className='flex pt-8 space-x-4'>
                                 <div>
-                                    <FiGithub size='30px'/>
+                                    <a href='https://github.com/BKM99/portfolio-blog-website' target='_blank' rel='noopner noreferrer'>
+                                        <FiGithub size='30px'/>
+                                    </a>
                                 </div>
-                                <div>
-                                    <HiOutlineExternalLink size='30px'/>
-                                </div>
+                                {/* <div> */}
+                                {/*     <HiOutlineExternalLink size='30px'/> */}
+                                {/* </div> */}
                             </div>
                         </blockquote>
                     </div>

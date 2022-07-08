@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import DOMPurify from 'isomorphic-dompurify'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function PostPage({
     frontmatter: { title, date, cover_image },
@@ -14,6 +15,9 @@ export default function PostPage({
     return (
         <>
             <div className='pt-28 pr-72 pl-72 pb-28 shadow-xl'>
+                <Head>
+                    <title>{title} | Brandon Morimoto</title>
+                </Head>
                 <Link href='/blog'>
                     <a className='inline-flex px-12 py-3 text-sm font-medium text-culturedWhite bg-mnBlue rounded shadow sm:w-auto active:bg-blue-500 hover:bg-carolinaBlue focus:outline-none focus:ring'>Go Back</a>
                 </Link>

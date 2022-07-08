@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion'
 import Skills from '../components/Skills'
+import Head from 'next/head'
 
 const About = () => {
     return (
         <div className='h-screen lg:pl-20 lg:pr-32'>
+            <Head>
+                <title>About | Brandon Morimoto</title>
+            </Head>
             <div className='flex justify-between md:mx-20 md:pt-32 pt-28'>
                 <div className='flex flex-col md:ml-20 mx-10 mt-10'>
                     <motion.div
@@ -72,20 +76,18 @@ const About = () => {
                         <p className='text-left font-normal mb-5 flex-wrap'>
                             I graduated from San Jose State University (SJSU) with a B.S in
                             Management Information Systems and minors in Computer Science and
-                            Mathematics. During my undergraduate studies, I geared much of my
-                            coursework to learning the fundamentals of programming, the math
-                            that powers machine learning, and project management. I enjoy
-                            using programming and math to build exciting projects.
-                            Check out some of work <a href='./projects' className='underline text-blue-500'> here</a>.
+                            Mathematics. Most of my experience is in full stack web development and machine learning.
+                            Check out some of my work <a href='./projects' className='underline text-blue-500'> here</a>.
                         </p>
+
                         <p className='text-left font-normal mb-5 flex-wrap'>
-                            Outside of programming, I love powerlifting and bodybuilding. I
-                            started going to the gym during the summer of my second year at
-                            university. That was about 3 years ago since then I’ve seen and
-                            felt major changes to my physique and mental health. Going to the
-                            gym has taught me about dedication and patience. These are some of
-                            the values that I take with me whenever I start a new project or
-                            try to learn something new.
+
+                        </p>
+
+                        <p className='text-left font-normal mb-5 flex-wrap'>
+                            In my freetime, I love to learn new technologies and keep up-to-date with artificial intelligence. Outside of
+                            programming, I love to go to the gym to push myself through powerlifting and bodybuilding. I&#39;ve been going
+                            to the gym for around 3.5 years now. The gym has taught me a great deal about dedication and patience.
                         </p>
                     </motion.div>
                     <div className='text-bold text-3xl mt-10'>

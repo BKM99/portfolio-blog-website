@@ -3,11 +3,15 @@ import path from 'path'
 import matter from 'gray-matter'
 import Post from '../../components/Post'
 import { sortByDate } from '../../utils'
+import Head from 'next/head'
 
 export default function Home({ posts }) {
     return (
         <div className='pt-28 pb-16 pl-20 pr-20'>
-            <h1 className='font-bold text-2xl text-center pb-4'>Random Musings</h1>
+            <Head>
+                <title>Blog | Brandon Morimoto</title>
+            </Head>
+            <h1 className='font-bold text-2xl text-center pb-8'>Random Musings</h1>
             <div className='grid lg:grid-cols-3 gap-8 pr-8 pl-8'>
                 {posts.map((post, index) => (
                     <Post key={index} post={post} />
