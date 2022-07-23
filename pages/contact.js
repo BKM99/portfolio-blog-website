@@ -49,7 +49,7 @@ const Contact = () => {
             <Head>
                 <title>Contact | Brandon Morimoto</title>
             </Head>
-			<div className='h-screen max-w-screen-xl px-4 py-16 mx-auto pt-32 md:p-20'>
+			<div className='h-screen max-w-screen-xl px-4 py-16 mx-auto md:pt-32 md:p-20'>
 				<div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
 					<div className='lg:col-span-2'>
 						<h1 className='font-bold text-6xl text-blue-500 pt-20'>

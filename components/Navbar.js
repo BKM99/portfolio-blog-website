@@ -20,7 +20,7 @@ const Navbar = () => {
                             <div className='flex justify-center items-center flex-shrink-0 '>
                                 <h1 className=' font-bold text-xl cursor-pointer'>
                                     <Link href='/'>
-                                        <a className='text-2xl'>
+                                        <a className='text-2xl pl-8 sm:pl-0'>
                                             Brandon<span className='text-blue-500'>Morimoto</span>
                                         </a>
                                     </Link>
@@ -75,11 +75,11 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            <div className='flex justify-center items-center flex-shrink-0 md:block'>
+                            <div className= 'flex justify-center items-center flex-shrink-0 md:block'>
                                 <div className='flex space-x-4'>
                                     <div>
                                         <a href='https://github.com/BKM99' target='_blank' rel='noopener noreferrer'>
-                                            <BsGithub size='2rem' />
+                                            <BsGithub className='hidden md:block' size='2rem' />
                                         </a>
                                     </div>
                                     <div>
@@ -87,7 +87,7 @@ const Navbar = () => {
                                             target='_blank'
                                             rel='noopener noreferrer'
                                         >
-                                            <BsLinkedin size='2rem' />
+                                            <BsLinkedin className='hidden md:block' size='2rem' />
                                         </a>
                                     </div>
                                 </div>
@@ -108,15 +108,15 @@ const Navbar = () => {
                         <div
                             className={
                             isOpen
-                                ? 'fixed left-0 top-0 w-[40%] sm:w[40%] md:w-[30%] h-screen bg-culturedWhite p-10 ease-in duration-500'
-                                : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+                                ? 'fixed left-0 top-0 w-full sm:w[40%] md:w-[30%] h-screen bg-culturedWhite p-10 ease-in duration-300'
+                                : 'fixed left-[-100%] top-0 p-10 ease-in duration-300'
                         }
                         >
                             <div>
                                 <div className='flex w-full items-center justify-between'>
                                     <div
                                         onClick={handleMobileNav}
-                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                                        className='rounded shadow-lg shadow-gray-400 p-3 cursor-pointer'
                                     >
                                         <AiOutlineClose />
                                     </div>
@@ -132,7 +132,7 @@ const Navbar = () => {
                                     }
                                     >
                                         <Link id='about' href='/'>
-                                            <a>Home</a>
+                                            <a onClick={handleMobileNav}>Home</a>
                                         </Link>
                                     </h1>
                                     <h1
@@ -143,7 +143,7 @@ const Navbar = () => {
                                     }
                                     >
                                         <Link id='about' href='/about'>
-                                            <a>About</a>
+                                            <a onClick={handleMobileNav}>About</a>
                                         </Link>
                                     </h1>
                                     <h1
@@ -154,7 +154,7 @@ const Navbar = () => {
                                     }
                                     >
                                         <Link id='projects' href='/projects'>
-                                            <a>Projects</a>
+                                            <a onClick={handleMobileNav}>Projects</a>
                                         </Link>
                                     </h1>
                                     <h1
@@ -165,19 +165,18 @@ const Navbar = () => {
                                     }
                                     >
                                         <Link id='blog' href='/blog'>
-                                            <a>Blog</a>
+                                            <a onClick={handleMobileNav}>Blog</a>
                                         </Link>
                                     </h1>
                                 </div>
                                 <div className='space-x-4 pt-20'>
-                                    <p className='font-bold'>Let&#39;s Connect!</p>
                                     <div className='flex space-x-4'>
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                                        <div className='rounded shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                             <a href='https://github.com/BKM99' target='_blank' rel='noopener noreferrer'>
                                                 <BsGithub size='2rem' />
                                             </a>
                                         </div>
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                                        <div className='rounded shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                             <a
                                                 href='https://www.linkedin.com/in/brandon-morimoto/'
                                                 target='_blank'

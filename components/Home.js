@@ -28,7 +28,7 @@ const Home = () => {
                     <h1 className='text-4xl text-blue-500 font-extrabold md:text-6xl'>
                         Software Engineer
                     </h1>
-                    <p className='text-sm mt-4 sm:leading-relaxed sm:text-xl text-black'>
+                    <p className='text-sm mt-4 sm:leading-relaxed md:text-xl text-black'>
                         Machine Learning enthusiast, (Neo)vim user, and Powerlifter
                     </p>
                     <div className='flex flex-wrap justify-center gap-4 mt-8 grid-cols-2'>
