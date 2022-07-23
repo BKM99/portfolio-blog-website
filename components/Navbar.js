@@ -170,7 +170,7 @@ const Navbar2 = () => {
                                     </h1>
                                 </div>
                                 <div className='space-x-4 pt-20'>
-                                    <p className='font-bold'>Let&#39s Connect!</p>
+                                    <p className='font-bold'>Let&#39;s Connect!</p>
                                     <div className='flex space-x-4'>
                                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                                             <a href='https://github.com/BKM99' target='_blank' rel='noopener noreferrer'>

@@ -40,7 +40,7 @@ const Contact = () => {
 					reset()
 				},
 				(error) => {
-					console.log(error.text)
+					console.log('error sending email')
 				}
 			)
 	}
