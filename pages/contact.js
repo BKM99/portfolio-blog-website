@@ -59,12 +59,12 @@ const Contact = () => {
 							Have any questions? Send me a message here! <br/>I respond quickly (within 48 hours). <br/>
                             <br/>
                             Additional ways to get in touch <br/>
-                            LinkedIn: <a className='text-blue-500'
+                            LinkedIn: <a className='text-blue-500 hover:underline'
                                 href='https://www.linkedin.com/in/brandon-morimoto/'
                                 target='_blank'
                                 rel='noopener noreferrer'>/in/brandon-morimoto/</a> <br/>
 
-                            Email: <a className='text-blue-500' href='mailto:bmorimoto99@gmail.com'>bmorimoto99@gmail.com</a>
+                            Email: <a className='text-blue-500 hover:underline' href='mailto:bmorimoto99@gmail.com'>bmorimoto99@gmail.com</a>
 
 						</p>
 					</div>

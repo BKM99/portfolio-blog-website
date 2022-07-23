@@ -85,7 +85,7 @@ const About = () => {
                         </p>
 
                         <p className='text-left font-normal mb-5 flex-wrap'>
-                            In my freetime, I love to learn new technologies and keep up-to-date with artificial intelligence. Outside of
+                            In my free time, I love to learn new technologies and keep up-to-date with artificial intelligence. Outside of
                             programming, I love to go to the gym to push myself through powerlifting and bodybuilding. I&#39;ve been going
                             to the gym for around 3.5 years now. The gym has taught me a great deal about dedication and patience.
                         </p>
