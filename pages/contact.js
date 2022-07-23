@@ -56,7 +56,7 @@ const Contact = () => {
 							Let&#39;s Talk
 						</h1>
 						<p className='max-w-xl text-lg pt-4'>
-							Have any questions? Send me a message here or on LinkedIn.
+							Have any questions? Send me a message here or on my LinkedIn.
 							Additional contact information can be found on my resume.
 						</p>
 					</div>
