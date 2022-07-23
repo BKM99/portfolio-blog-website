@@ -20,7 +20,7 @@ const Home = () => {
                 },
             }}
         >
-            <div className='flex max-w-screen-xl px-4 py-32 mx-auto h-screen items-center'>
+            <div className='flex px-4 py-32 mx-auto h-screen items-center'>
                 <div className='text-center mx-auto'>
                     <h1 className='text-4xl text-black font-extrabold md:text-6xl'>
                         Brandon Morimoto

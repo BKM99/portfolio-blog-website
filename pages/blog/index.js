@@ -12,7 +12,7 @@ export default function Home({ posts }) {
                 <title>Blog | Brandon Morimoto</title>
             </Head>
             <h1 className='font-bold text-2xl text-center pb-8'>Random Musings</h1>
-            <div className='grid lg:grid-cols-3 gap-8 pr-8 pl-8'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 pr-8 pl-8'>
                 {posts.map((post, index) => (
                     <Post key={index} post={post} />
                 ))}

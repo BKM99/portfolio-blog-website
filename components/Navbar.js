@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
-const Navbar2 = () => {
+const Navbar = () => {
     const router = useRouter()
     const [isOpen, setIsOpen] = useState(false)
 
@@ -197,4 +197,4 @@ const Navbar2 = () => {
     )
 }
 
-export default Navbar2
+export default Navbar
