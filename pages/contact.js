@@ -14,6 +14,7 @@ const contactSchema = yup.object({
 
 const Contact = () => {
 	const form = useRef()
+    const formErrors = useState(false)
 
 	const {
 		register,
@@ -29,18 +30,20 @@ const Contact = () => {
 	const submitForm = (data) => {
 		emailjs
 			.sendForm(
-				process.env.SERVICE_ID,
-				process.env.TEMPLATE_ID,
+				process.env.NEXT_PUBLIC_SERVICE_ID,
+				process.env.NEXT_PUBLIC_TEMPLATE_ID,
 				form.current,
-				process.env.PUBLIC_API_KEY
+				process.env.NEXT_PUBLIC_PUBLIC_API_KEY
 			)
 			.then(
 				(result) => {
+                    console.log('sent email')
 					setSubmitted(true)
 					reset()
 				},
 				(error) => {
 					console.log('error sending email')
+                    formErrors(true)
 				}
 			)
 	}
@@ -128,14 +131,14 @@ const Contact = () => {
 								</button>
 							</div>
 							<div>
-								{submitted ? (
-									<span className='text-green-400 font-bold'>
-										Message Sent! I will get back to you within 48 hours.
-									</span>
-								) : null}
-							</div>
-						</form>
-					</div>
+                                {submitted ? (
+                                    <span className='text-green-400 font-bold'>
+                                        Message Sent! I will get back to you within 48 hours.
+                                    </span>
+                                    ) : null}
+                            </div>
+                        </form>
+                    </div>
 				</div>
 			</div>
 		</div>
