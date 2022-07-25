@@ -14,7 +14,7 @@ export default function PostPage({
     const clean = DOMPurify.sanitize(content)
     return (
         <>
-            <div className='pt-28 pr-72 pl-72 pb-28 shadow-xl'>
+            <div className='pt-28  pl-4 pr-4 md:pr-72 md:pl-72 pb-28 shadow-xl'>
                 <Head>
                     <title>{title} | Brandon Morimoto</title>
                 </Head>
@@ -22,7 +22,7 @@ export default function PostPage({
                     <a className='inline-flex px-12 py-3 text-sm font-medium text-culturedWhite bg-mnBlue rounded shadow sm:w-auto active:bg-blue-500 hover:bg-carolinaBlue focus:outline-none focus:ring'>Go Back</a>
                 </Link>
                 <div>
-                    <h1 className='text-2xl font-bold pt-8'>{title}</h1>
+                    <h1 className='text-2xl font-bold pt-4'>{title}</h1>
                     <div className='pb-4'>Posted on {date}</div>
                     <img src={cover_image} alt='' />
                     <div className='prose pt-4'>

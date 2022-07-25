@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 export default function Home({ posts }) {
     return (
-        <div className='pt-28 pb-16 pl-20 pr-20'>
+        <div className='pt-28 pb-16 md:pl-20 md:pr-20'>
             <Head>
                 <title>Blog | Brandon Morimoto</title>
             </Head>
