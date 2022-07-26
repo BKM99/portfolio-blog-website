@@ -5,6 +5,7 @@ import { useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import Head from 'next/head'
+import Popup from '../components/ContactSubmitPopup'
 
 const contactSchema = yup.object({
 	name: yup.string().required(),
@@ -122,21 +123,14 @@ const Contact = () => {
 							</div>
 
 							<div className='mt-4'>
-								<button
+                                {!submitted ? <button
 									type='submit'
 									className='inline-flex items-center justify-center w-full px-5 py-3 text-white bg-mnBlue rounded-lg sm:w-auto space-x-2 hover:bg-carolinaBlue'
 								>
 									<span className='font-medium'> Send </span>
 									<IoIosSend size='20px' />
-								</button>
+								</button> : <Popup/>}
 							</div>
-							<div>
-                                {submitted ? (
-                                    <span className='text-green-400 font-bold'>
-                                        Message Sent! I will get back to you within 48 hours.
-                                    </span>
-                                    ) : null}
-                            </div>
                         </form>
                     </div>
 				</div>
