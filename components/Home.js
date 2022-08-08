@@ -29,7 +29,7 @@ const Home = () => {
                         Software Engineer
                     </h1>
                     <p className='text-sm mt-4 sm:leading-relaxed md:text-xl text-black'>
-                        Machine Learning enthusiast, (Neo)vim user, and Powerlifter
+                        Web Developer, Machine Learning enthusiast, and Neovim user
                     </p>
                     <div className='flex flex-wrap justify-center gap-4 mt-8 grid-cols-2'>
                         <Link href='/contact'>
