@@ -30,7 +30,8 @@ const Skills = () => {
                                 <div className='text-2xl'>
                                     <li>Django</li>
                                     <li>Python</li>
-                                    <li>NodeJS</li>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
                                     <li>MongoDB</li>
                                     <li>MySQL</li>
                                     <li>Cassandra</li>
@@ -42,8 +43,8 @@ const Skills = () => {
                             <ul>
                                 <span className='text-blue-500'>Frontend</span>
                                 <div className='text-2xl'>
-                                    <li>ReactJS</li>
-                                    <li>NextJS</li>
+                                    <li>React</li>
+                                    <li>Next.js</li>
                                     <li>HTML/CSS</li>
                                     <li>Tailwind CSS</li>
                                 </div>
@@ -75,7 +76,7 @@ const Skills = () => {
                                     <li>Docker</li>
                                     <li>Linux/Unix</li>
                                     <li>Git/GitHub</li>
-                                    <li>AWS EC2</li>
+                                    <li>AWS</li>
                                 </div>
                             </ul>
                         </div>
