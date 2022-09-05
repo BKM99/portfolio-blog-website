@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<div className='bg-white'>
+		<div>
 			<Navbar/>
 			<Component {...pageProps} />
 		</div>
