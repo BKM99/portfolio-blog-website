@@ -1,18 +1,13 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
-import DevMode from '../components/DevMode'
+// import DevMode from '../components/DevMode'
 
 const Home = () => {
 
-    const [isDevMode, setDevMode] = useState(false)
-    const handleDevMode = () => {
-        setDevMode(true)
-    }
-
     return (
         <div>
-            {isDevMode ? <DevMode/> : <motion.div
+            <motion.div
                 initial='hidden'
                 animate='visible'
                 variants={{
@@ -58,12 +53,18 @@ const Home = () => {
                                 </a>
                             </Link>
                         </div>
-                        <div className='hidden md:block'>
-                            <button onClick={handleDevMode}>Dev Mode</button>
+                        <div className='py-10'>
+                            <Link href='/dev-mode'>
+                                <a
+                                    className='px-12 py-3 text-sm font-medium text-culturedWhite bg-mnBlue rounded shadow active:bg-blue-500 hover:bg-carolinaBlue focus:outline-none focus:ring'
+                                >
+                                    Dev Mode
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
-            </motion.div>}
+            </motion.div>
         </div>
     )
 }

@@ -15,8 +15,8 @@ module.exports = {
                 'midnightBlue': '#41729F',
                 'darkBlue': '#274472',
                 'babyBlue': '#C3E0E5',
-                'gainsboro': '#E2DED0'
-
+                'gainsboro': '#E2DED0',
+                'testColor': '#1d2021'
             }
         },
     },
