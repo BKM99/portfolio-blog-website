@@ -14,7 +14,7 @@ export default function PostPage({
     const clean = DOMPurify.sanitize(content)
     return (
         <>
-            <div className='pt-28  pl-4 pr-4 md:pr-72 md:pl-72 pb-28 shadow-xl'>
+            <div className='pt-28 pl-4 pr-4 md:pr-72 md:pl-72 pb-28 shadow-xl'>
                 <Head>
                     <title>{title} | Brandon Morimoto</title>
                 </Head>
